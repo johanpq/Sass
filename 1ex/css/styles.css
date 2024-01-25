@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgba(101, 133, 99, 0.568627451);
+  color: rgba(19, 15, 15, 0.8901960784);
+}
+
+header {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  height: 200px;
+  flex-direction: column;
+}
+header h1 {
+  text-align: center;
+}
+header ul {
+  display: flex;
+  height: 100px;
+  width: 80em;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+header ul a {
+  text-decoration: none;
+  color: yellow;
+}
+header ul a:hover {
+  color: rgba(101, 133, 99, 0.568627451);
+  transition: color 0.4s;
+}
+
+/*# sourceMappingURL=styles.css.map */
