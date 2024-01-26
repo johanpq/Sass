@@ -1,0 +1,39 @@
+@use 'partials/_variables'
+@use 'partials/_mixins'
+    
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body 
+    height: 100vh
+    background-color: variables.$Primary-color
+    color: variables.$Third-color
+
+header
+    @include mixins.flex-container
+    height: 200px
+    flex-direction: column
+
+    h1
+        text-align: center
+    
+    
+    ul
+        display: flex
+        height: 100px
+        width: 80em
+        gap: 30px
+        flex-direction: row
+        justify-content: flex-end
+        align-items: center
+        list-style: none
+
+        a
+            text-decoration: none
+            color: variables.$Secondary-color
+        a:hover 
+            color: variables.$Primary-color
+            transition: color 0.4s
+        
